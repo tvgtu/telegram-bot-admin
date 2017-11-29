@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8"></meta>
+    <title>Telegram Messages</title>
+</head>
+<body>
+<table>
+    <tr>
+        <th>ID</th>
+        <th>User ID</th>
+        <th>Message</th>
+    </tr>
+    <tr th:each="message : ${messages}">
+        <td th:text="${message.id}">11111</td>
+        <td th:text="${message.userId}">user-1111</td>
+        <td th:text="${message.text}">user-message</td>
+    </tr>
+</table>
+</body>
+</html>
