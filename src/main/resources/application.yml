@@ -1,6 +1,6 @@
 spring:
   datasource:
-    url: jdbc:postgresql://localhost:5433/telebot
+    url: jdbc:postgresql://telegram-db:5432/telebot
     username: telebot
     password: 123456
     driver-class-name: org.postgresql.Driver
